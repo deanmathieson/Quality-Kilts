@@ -660,7 +660,7 @@ a.uk-link-reset:hover,
   position: absolute;
   top: 50%;
   max-width: calc(50% - (50px / 2));
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #8C86AA;
 }
 .uk-divider-icon::before {
   right: calc(50% + (50px / 2));
@@ -683,7 +683,7 @@ a.uk-link-reset:hover,
   display: inline-block;
   width: 100px;
   max-width: 100%;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #8C86AA;
   vertical-align: top;
 }
 /* ========================================================================

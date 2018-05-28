@@ -8,15 +8,48 @@
 	<script src="js/uikit.js"></script>
 	<script src="js/uikit-icons.min.js"></script>
 	<style>
-
+	@font-face {
+        font-family: trajanus;
+        src: url(fonts/trajanus.tff);
+    }
+    html {
+        font-family: trajanus;
+		height:100%;
+	}
+	#mainBody{
+		background-image: url('images/background.jpg');
+		height:100%;
+	}
+	body {
+		height:100%;
+		color:#000;
+		text-shadow: 1px 1px #fff;
+	}	
+	.uk-subnav-pill > * > :first-child {
+		font-size:32px;
+		color: #000;
+	}
+	.uk-subnav-pill > .uk-active > a {
+		background-color: #007092;
+	}
 </style>
 </head>
 <body>
-    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/background.jpg');">
-
-        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" style="text-shadow: 2px 2px #000000;">Established 1927.</h1>
-
     </div>
+      <div class="uk-background-cover" id="mainBody" >
+		<ul class="uk-subnav uk-subnav-pill " uk-switcher>
+		    <li><a href="#">About Us</a></li>
+		    <li><a href="#">Services</a></li>
+		    <li><a href="#">Products</a></li>
+		</ul>
+		<ul class="uk-switcher uk-margin">
+		    <li>Hello! <a href="#" uk-switcher-item="2">Switch to item 3</a></li>
+		    <li>Hello again! <a href="#" uk-switcher-item="next">Next item</a></li>
+		    <li>Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></li>
+		</ul>
+      	
+      	
+	</div>
 </body>
 <footer>
 	
