@@ -2,32 +2,34 @@ $( document ).ready(function() {
 	var aboutUsHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1>Davison Menswear & Kilt Hire<br/>Established 1927.</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid><div><p>';
 	aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
 	aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
+	
 	var servicesHTML = '<div style="padding: 10px; height:100%" class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">'
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Suits</h3>'
 	servicesHTML+= '<img class="serviceImg" src="images/suit1.jpg"/>'
-	servicesHTML+= "<ul><li>Morning Suits</li><li>Shirts</li><li>Jackets</li><li>Dinner Suits</li></ul>"
+	servicesHTML+= "<ul style='padding: 0px;'><li>Morning Suits</li><li>Shirts</li><li>Jackets</li><li>Dinner Suits</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Kilts</h3>'
 	servicesHTML+= '<img class="serviceImg" src="images/kilt1.jpg"/>'
-	servicesHTML+= "<ul><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li></ul>"
+	servicesHTML+= "<ul style='padding: 0px;'><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Misc</h3>'
 	servicesHTML+= '<img class="serviceImg" src="images/shoes2.jpg"/>'
-	servicesHTML+= "<ul><li>Shoes</li><li>Buckles</li><li>Ex Hire Sales</li><li>Measauring</li></ul>"
+	servicesHTML+= "<ul style='padding: 0px;'><li>Shoes</li><li>Buckles</li><li>Ex Hire Sales</li><li>Measauring</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
-	var classySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Dress Sporrans</h1><div uk-slider>'
+
+	var classySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Dress Sporrans</h1><div uk-slider="finite: true">'
 	classySporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	classySporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	classySporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	classySporran += '<li class="uk-transition-toggle">'
 	classySporran += '<img src="images/dress/dress1.jpg" alt="">'
 	classySporran += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>EW1 Chrome</h3></div>'
@@ -119,9 +121,9 @@ $( document ).ready(function() {
 	classySporran += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	classySporran += '</div></div></div>'
 
-	var semiSporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Semi-Dress Sporrans</h1><div uk-slider>'
+	var semiSporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Semi-Dress Sporrans</h1><div uk-slider="finite: true">'
 	semiSporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	semiSporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	semiSporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	semiSporran += '<li class="uk-transition-toggle">'
 	semiSporran += '<img src="images/semi/semi1.jpg" alt="">'
 	semiSporran += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>SHEP</h3></div>'
@@ -213,9 +215,9 @@ $( document ).ready(function() {
 	semiSporran += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	semiSporran += '</div></div></div>'
 
-	var daySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Day Sporrans</h1><div uk-slider>'
+	var daySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Day Sporrans</h1><div uk-slider="finite: true">'
 	daySporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	daySporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	daySporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	daySporran += '<li class="uk-transition-toggle">'
 	daySporran += '<img src="images/day/day1.jpg" alt="">'
 	daySporran += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>8GS</h3></div>'
@@ -307,9 +309,9 @@ $( document ).ready(function() {
 	daySporran += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	daySporran += '</div></div></div>'
 
-	var boySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Boys Sporrans</h1><div uk-slider>'
+	var boySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Boys Sporrans</h1><div uk-slider="finite: true">'
 	boySporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	boySporran += '<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m">'
+	boySporran += '<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid">'
 	boySporran += '<li class="uk-transition-toggle">'
 	boySporran += '<img src="images/boy/boy1.jpg" alt="">'
 	boySporran += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>8GS</h3></div>'
@@ -329,9 +331,9 @@ $( document ).ready(function() {
 	boySporran += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	boySporran += '</div></div></div>'
 
-	var tartanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Tartans</h1><div uk-slider>'
+	var tartanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Tartans</h1><div uk-slider="finite: true">'
 	tartanHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	tartanHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	tartanHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	tartanHTML += '<li class="uk-transition-toggle">'
 	tartanHTML += '<img src="images/tartan/tartan1.jpg" alt="">'
 	tartanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Davidson Modern</h3></div>'
@@ -379,9 +381,9 @@ $( document ).ready(function() {
 	tartanHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	tartanHTML += '</div></div></div>'
 
-	var beltHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Belts</h1><div uk-slider>'
+	var beltHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Belts</h1><div uk-slider="finite: true">'
 	beltHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	beltHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	beltHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	beltHTML += '<li class="uk-transition-toggle">'
 	beltHTML += '<img src="images/belt/belt1.jpg" alt="">'
 	beltHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Unlined Belt</h3></div>'
@@ -429,9 +431,9 @@ $( document ).ready(function() {
 	beltHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	beltHTML += '</div></div></div>'
 
-	var buckleHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Buckles</h1><div uk-slider>'
+	var buckleHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Buckles</h1><div uk-slider="finite: true">'
 	buckleHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	buckleHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	buckleHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	buckleHTML += '<li class="uk-transition-toggle">'
 	buckleHTML += '<img src="images/buckle/buckle1.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Celtic Chrome</h3></div>'
@@ -473,31 +475,31 @@ $( document ).ready(function() {
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Plain Lion Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle11.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Plain Stag Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle12.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Plain Masonic Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle13.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Celtic Thistle Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle14.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Celtic Lion Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle15.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Celtic Stag Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle16.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Plain Masonic Chrome</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '<li class="uk-transition-toggle">'
-	buckleHTML += '<img src="images/buckle/buckle10.jpg" alt="">'
+	buckleHTML += '<img src="images/buckle/buckle17.jpg" alt="">'
 	buckleHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>WES12 Chrome Enamel</h3></div>'
 	buckleHTML += '</li>'
 	buckleHTML += '</ul>'
@@ -507,9 +509,9 @@ $( document ).ready(function() {
 	buckleHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	buckleHTML += '</div></div></div>'
 
-	var skeanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Skean Dhus</h1><div uk-slider>'
+	var skeanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Skean Dhus</h1><div uk-slider="finite: true">'
 	skeanHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	skeanHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	skeanHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	skeanHTML += '<li class="uk-transition-toggle">'
 	skeanHTML += '<img src="images/skean/skean1.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Topaz Stone</h3></div>'
@@ -551,23 +553,23 @@ $( document ).ready(function() {
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>SK-C</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '<li class="uk-transition-toggle">'
-	skeanHTML += '<img src="images/skean/skean10.jpg" alt="">'
+	skeanHTML += '<img src="images/skean/skean11.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Topaz Stone Thistle Antique</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '<li class="uk-transition-toggle">'
-	skeanHTML += '<img src="images/skean/skean10.jpg" alt="">'
+	skeanHTML += '<img src="images/skean/skean12.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Blue Stone Thistle Antique</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '<li class="uk-transition-toggle">'
-	skeanHTML += '<img src="images/skean/skean10.jpg" alt="">'
+	skeanHTML += '<img src="images/skean/skean13.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Am Stone Thistle Antique</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '<li class="uk-transition-toggle">'
-	skeanHTML += '<img src="images/skean/skean10.jpg" alt="">'
+	skeanHTML += '<img src="images/skean/skean14.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Green Stone Thistle Antique</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '<li class="uk-transition-toggle">'
-	skeanHTML += '<img src="images/skean/skean10.jpg" alt="">'
+	skeanHTML += '<img src="images/skean/skean15.jpg" alt="">'
 	skeanHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Green Stone Shamrock</h3></div>'
 	skeanHTML += '</li>'
 	skeanHTML += '</ul>'
@@ -577,9 +579,9 @@ $( document ).ready(function() {
 	skeanHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	skeanHTML += '</div></div></div>'
 
-	var pinHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Kilt Pins</h1><div uk-slider>'
+	var pinHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Kilt Pins</h1><div uk-slider="finite: true">'
 	pinHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	pinHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
+	pinHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	pinHTML += '<li class="uk-transition-toggle">'
 	pinHTML += '<img src="images/pin/pin1.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Sword</h3></div>'
@@ -621,27 +623,27 @@ $( document ).ready(function() {
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Stag And Hound</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin11.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Maple Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin12.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Stag Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin13.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Sword Thistle Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin14.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>2-Thistle Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin15.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Oval Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '<li class="uk-transition-toggle">'
-	pinHTML += '<img src="images/pin/pin10.jpg" alt="">'
+	pinHTML += '<img src="images/pin/pin16.jpg" alt="">'
 	pinHTML += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom"><h3>Plain Sword Bulldog</h3></div>'
 	pinHTML += '</li>'
 	pinHTML += '</ul>'
@@ -653,8 +655,10 @@ $( document ).ready(function() {
 	$("#mbod").html(aboutUsHTML);
 
 	$( ".menubut" ).click(function( event ) {
-		$(".menubut").removeClass("uk-active");
-		$(".menubut").children().removeClass("uk-active");
+		if(!$(this).children().text().startsWith("Products")){
+			$(".menubut").removeClass("uk-active");
+			$(".menubut").children().removeClass("uk-active")
+		}
 		$(this).addClass("uk-active");
 		if($(this).children().text() == "Services") {
 			$("#mbod").html(servicesHTML);
@@ -664,7 +668,7 @@ $( document ).ready(function() {
 		}
 		if($(this).children().text().startsWith("Dress")) {
 			$("#mbod").html(classySporran);
-			$(this).children().addClass("uk-active")
+			$(this).addClass("uk-active")
 		}			
 		if($(this).children().text().startsWith("Semi")) {
 			$("#mbod").html(semiSporran);
@@ -690,7 +694,15 @@ $( document ).ready(function() {
 			$("#mbod").html(buckleHTML);
 			$(this).children().addClass("uk-active")
 		}
-		console.log($(this).children().text());
+		if($(this).children().text().startsWith("Skean")) {
+			$("#mbod").html(skeanHTML);
+			$(this).children().addClass("uk-active")
+		}
+		if($(this).children().text().startsWith("Kilt Pin")) {
+			$("#mbod").html(pinHTML);
+			$(this).children().addClass("uk-active")
+		}
+		console.log("childen text "+ $(this).children().text());
 	});
 
 	$("#productsNav").hover(
