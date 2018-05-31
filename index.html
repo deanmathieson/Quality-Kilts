@@ -1,423 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Davison Menswear</title>
+	<title>Davison Menswear & Kilt Hire</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/uikit.css" />
 	<script src="js/uikit.js"></script>
 	<script src="js/uikit-icons.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<style>
-	@font-face {
-        font-family: libre;
-        src: url('css/fonts/librebaskerville-regular.ttf');
-    }
-    html {
-        font-family: libre;
-		height:100%;
-	}
-	#mainBody{
-		background-image: url('images/background.jpg');
-		height:100%;
-	}
-	body {
-		height:100%;
-		color:#D3EDFF;
-	}	
-	.uk-subnav-pill > * > :first-child {
-		font-size:20px;
-		color: #5FA8D3;
-	}
-	.uk-subnav > * {
-		padding-left: 0px; 
-		margin-right: 30px;
-	}
-	.uk-subnav-pill > * > a:hover {
-		background-color: #5FA8D3;
-		color:black;
-	}
-	.uk-table th {
-		color: #5FA8D3;
-	}
-	h2, h1 {
-		color: #5FA8D3;
-	}
-	.uk-subnav > .menubut {
-		margin-top:60px;
-	}
-	#mbod {
-		background-color: rgba(0,0,0,0.7);
-    	margin-top: 20px;
-	    position: absolute;
-	    left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; ;
-	    width: 100%;    
-	    max-width:1200px;
-     	height: calc(100% - 420px);
-	    animation: fadein 2s;
-	    -moz-animation: fadein 2s; /* Firefox */
-	    -webkit-animation: fadein 2s; /* Safari and Chrome */
-	    -o-animation: fadein 2s; /* Opera */
-	    border-radius: 15px;
-	    border: 2px solid #D3EDFF;
-	    padding: 20px; 
-	}
-	@keyframes fadein {
-	    from {
-	        opacity:0;
-	    }
-	    to {
-	        opacity:.7;
-	    }
-	}
-	@-moz-keyframes fadein { /* Firefox */
-	    from {
-	        opacity:0;
-	    }
-	    to {
-	        opacity:.7;
-	    }
-	}
-	@-webkit-keyframes fadein { /* Safari and Chrome */
-	    from {
-	        opacity:0;
-	    }
-	    to {
-	        opacity:.7;
-	    }
-	}
-	@-o-keyframes fadein { /* Opera */
-	    from {
-	        opacity:0;
-	    }
-	    to {
-	        opacity: .7;
-	    }
-	}
-	#footr {
-	    position: absolute;
-	    width: 100%;
-	    bottom: 0px;
-	    height: 180px;
-	    background-color: black;
-	    opacity: 0.7;
-	    left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; 
-		border-top: 2px solid #D3EDFF;
-	}
-	.uk-section {
-		padding:0px;
-	}
-	.uk-table td {
-		padding:0px;
-		font-size:12px;
-	}
-	.time {
-	    text-align: right!important;
-	    padding-right: 135px!important;
-	}
-	.uk-active > a {
-		background-color: #5FA8D3!important;
-		color: black!important;
-	}
-	.uk-card-default .uk-card-title {
-		color: #5FA8D3;
-		text-align: center;
-	}
-	.uk-card {
-		height: calc(100% - 20px);
-     	background-color: transparent;
-    	border: 1px solid #D3EDFF;
-	}
-	.uk-card-default {
-		color:#D3EDFF;
-	}
-	.serviceImg {
-		max-height:273px;
-		width: 100%;
-	}
-	.block {
-		display:block;
-	}
-</style>
+	<script src="js/js.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="description=" content="Davison Menswear provides a quality kilt hire and menswear sales service in Edinburgh and the Lothians.">
+	<META NAME="keywords" CONTENT="Davison, davison, kilt,suppliers,kilt hire, hire, edinburgh, Edinburgh, menswear,Scottish outfitting services">
+	<link rel='icon' type='image/png' href='images/favicon.png' />
 </head>
 <body>
-    <div class="uk-background-cover" id="mainBody" >
-    	<div style="height:100%;">
-    		<div style="width:100%; background-color: rgba(0,0,0,0.7); height: 154px; border-bottom:2px solid #D3EDFF;">
-	    		<div class="uk-container" >
+	<div class="uk-background-cover" id="mainBody" >
+		<div style="height:100%;">
+			<div style="width:100%; background-color: rgba(0,0,0,0.7); height: 154px; border-bottom:2px solid #D3EDFF;">
+				<div class="uk-container" >
 					<ul class="uk-subnav uk-subnav-pill">
-					    <li style="margin-left:25px;" class="uk-navbar-left uk-disabled"><a href="#"><img src="images/logo.png"" width="" height="" alt="" uk-img"></a></li>
-					    <li class="menubut uk-active"><a href="#">About Us</a></li>
-					    <li class="menubut"><a href="#">Services</a></li>
-					    <li class="menubut"><a id="productsNav" href="#">Products</a>
-					    	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-			                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-			                        <div>
-			                            <ul class="uk-nav uk-navbar-dropdown-nav">
-			                                <li class="uk-nav-header">Sporrans</li>
-			                                <li class="menubut"><a href="#">Dress</a></li>
-			                                <li class="menubut"><a href="#">Semi Dress</a></li>
-			                                <li class="menubut"><a href="#">Day</a></li>
-			                                <li class="menubut"><a href="#">Boys</a></li>
-			                                <li class="uk-nav-divider"></li>
-			                                <li class="menubut"><a href="#">Tartans</a></li>
-			                            </ul>
-			                        </div>
-			                        <div>
-			                            <ul class="uk-nav uk-navbar-dropdown-nav">
-			                                <li class="uk-nav-header">Accessories</li>
-			                                <li class="menubut"><a href="#">Belts</a></li>
-			                                <li class="menubut"><a href="#">Buckles</a></li>
-			                                <li class="menubut"><a href="#">Skean Dhus</a></li>
-			                                <li class="menubut"><a href="#">Kilt Pins</a></li>
-			                            </ul>
-			                        </div>
-			                    </div>
-			                </div>
-		            	</li>
+						<li style="margin-left:25px;" class="uk-navbar-left uk-disabled"><a href="#"><img src="images/logo.png"" width="" height="" alt="" uk-img"></a></li>
+						<li class="menubut uk-active"><a href="#">About Us</a></li>
+						<li class="menubut"><a href="#">Services</a></li>
+						<li class="menubut"><a id="productsNav" href="#">Products</a>
+							<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+								<div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+									<div>
+										<ul class="uk-nav uk-navbar-dropdown-nav">
+											<li class="uk-nav-header">Sporrans</li>
+											<li class="menubut"><a href="#">Dress</a></li>
+											<li class="menubut"><a href="#">Semi Dress</a></li>
+											<li class="menubut"><a href="#">Day</a></li>
+											<li class="menubut"><a href="#">Boys</a></li>
+											<li class="uk-nav-divider"></li>
+											<li class="menubut"><a href="#">Tartans</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-navbar-dropdown-nav">
+											<li class="uk-nav-header">Accessories</li>
+											<li class="menubut"><a href="#">Belts</a></li>
+											<li class="menubut"><a href="#">Buckles</a></li>
+											<li class="menubut"><a href="#">Skean Dhus</a></li>
+											<li class="menubut"><a href="#">Kilt Pins</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<div id="mbod">
-			</div>
+			<div id="mbod"></div>
 		</div>
 	</div>
 </body>
-<script>
-	$( document ).ready(function() {
-		var aboutUsHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1>Davison Menswear<br/>Established 1927.</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid><div><p>';
-		aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
-		aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
-		var servicesHTML = '<div style="padding: 10px; height:100%" class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">'
-		    servicesHTML+= "<div style='height:100%'>"
-		        servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
-		            servicesHTML+= '<h3 class="uk-card-title">Suits</h3>'
-		            servicesHTML+= '<img class="serviceImg" src="images/suit1.jpg"/>'
-		            servicesHTML+= "<ul><li>Morning Suits</li><li>Shirts</li><li>Jackets</li><li>Dinner Suits</li></ul>"
-		        servicesHTML+= "</div>"
-		    servicesHTML+= "</div>"
-		    servicesHTML+= "<div style='height:100%'>"
-		        servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
-		            servicesHTML+= '<h3 class="uk-card-title">Kilts</h3>'
-		            servicesHTML+= '<img class="serviceImg" src="images/kilt1.jpg"/>'
-		            servicesHTML+= "<ul><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li></ul>"
-		        servicesHTML+= "</div>"
-		    servicesHTML+= "</div>"
-		    servicesHTML+= "<div style='height:100%'>"
-		        servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
-		            servicesHTML+= '<h3 class="uk-card-title">Misc</h3>'
-		            servicesHTML+= '<img class="serviceImg" src="images/shoes2.jpg"/>'
-		            servicesHTML+= "<ul><li>Shoes</li><li>Buckles</li><li>Ex Hire Sales</li><li>Measauring</li></ul>"
-		        servicesHTML+= "</div>"
-		    servicesHTML+= "</div>"
-		servicesHTML+= "</div>"
-		var classySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1>Dress Sporrans</h1><div uk-slider>'
-		    classySporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-		        classySporran += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress1.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>1</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress2.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>2</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress3.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>3</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress4.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>4</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress5.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>5</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress6.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>6</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress7.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>7</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress8.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>8</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress9.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>9</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress10.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>10</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress11.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>11</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress12.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>12</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress13.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>13</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress14.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>14</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress15.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>15</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress16.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>16</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress17.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>17</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress18.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>18</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress19.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>19</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress20.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>20</h1></div>'
-		            classySporran += '</li>'
-		            classySporran += '<li>'
-		                classySporran += '<img src="images/dress21.jpg" alt="">'
-		                classySporran += '<div class="uk-position-center uk-panel"><h1>21</h1></div>'
-		            classySporran += '</li>'
-		        classySporran += '</ul>'
-		        classySporran += '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>'
-		        classySporran += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
-		    classySporran += '</div>'
-		    classySporran += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
-		classySporran += '</div></div></div>'
-		$("#mbod").html(aboutUsHTML);
-
-
- 		$( ".menubut" ).click(function( event ) {
- 			$(".menubut").removeClass("uk-active");
- 			$(this).addClass("uk-active");
- 			if($(this).children().text() == "Services") {
- 				$("#mbod").html(servicesHTML);
- 			}
- 			if($(this).children().text() == "About Us") {
- 				$("#mbod").html(aboutUsHTML);
- 			}
- 			if($(this).children().text().startsWith("Dress")) {
- 				$("#mbod").html(classySporran);
- 			}
- 				console.log($(this).children().text());
-    	});
-    	
-    	$("#productsNav").hover(
-    		function() {
-    		$(".uk-navbar-dropdown").addClass("block");
-    	}, function() {
-    		$(".uk-navbar-dropdown").removeClass("block");
-    	});
-    	$(".uk-navbar-dropdown").hover(
-    		function() {
-    		$(".uk-navbar-dropdown").addClass("block");
-    	}, function() {
-    		$(".uk-navbar-dropdown").removeClass("block");
-    	});
-	});
-	</script>
 <footer>
 	<div id="footr">
 		<div class="uk-section">
-		    <div class="uk-container" style="padding-left:25px; padding-right:25px">
-		        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-		            <div>
-		               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8938.275654656887!2d-3.204802!3d55.9395108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d0675edf90601c9!2sDavison+Menswear!5e0!3m2!1sen!2suk!4v1527535608538" width="200" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
-		            </div>
-		            <div>
-		                <table class="uk-table">
-						    <thead>
-						        <tr>
-						            <th></th>
-						        </tr>
-						    </thead>
-						    <tfoot>
-						        <tr>
-						            <td></td>
-						        </tr>
-						    </tfoot>
-						    <tbody>
-						        <tr>
-						            <td></td>
-						        </tr>
-						    </tbody>
+			<div class="uk-container" style="padding-left:25px; padding-right:25px">
+				<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+					<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8938.275654656887!2d-3.204802!3d55.9395108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d0675edf90601c9!2sDavison+Menswear!5e0!3m2!1sen!2suk!4v1527535608538" width="200" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div>
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th></th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td></td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td></td>
+								</tr>
+							</tbody>
 						</table>
-		            </div>
-		            <div>
-		                <table class="uk-table">
-						    <thead>
-						        <tr>
-						            <th>Day</th>
-						            <th class="time">Opening Times</th>
-						        </tr>
-						    </thead>
-						    <tbody>
-						        <tr>
-						            <td class="day">Monday</td>
-						            <td class="time">9.30am - 6pm</td>
-						        </tr>
+					</div>
+					<div>
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>Day</th>
+									<th class="time">Opening Times</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="day">Monday</td>
+									<td class="time">9.30am - 6pm</td>
+								</tr>
+								<tr>
+									<td class="day">Tuesday</td>
+									<td class="time">9.30am - 6pm</td>
+								</tr>
 
-						        <tr>
-						            <td class="day">Tuesday</td>
-						            <td class="time">9.30am - 6pm</td>
-						        </tr>
-
-						        <tr>
-						            <td class="day">Wednesday</td>
-						            <td class="time">9.30am - 6pm</td>
-						        </tr>
-
-						        <tr>
-						            <td class="day">Thursday</td>
-						            <td class="time">9.30am - 8pm</td>
-						        </tr>
-
-						        <tr>
-						            <td class="day">Friday</td>
-						            <td class="time">9.30am - 6pm</td>
-						        </tr>
-
-						        <tr>
-						            <td class="day">Saturday</td>
-						            <td class="time">9.30am - 5pm</td>
-						        </tr>
-
-						        <tr>
-						            <td class="day">Sunday</td>
-						            <td class="time">11am - 4pm</td>
-						        </tr>
-						    </tbody>
+								<tr>
+									<td class="day">Wednesday</td>
+									<td class="time">9.30am - 6pm</td>
+								</tr>
+								<tr>
+									<td class="day">Thursday</td>
+									<td class="time">9.30am - 8pm</td>
+								</tr>
+								<tr>
+									<td class="day">Friday</td>
+									<td class="time">9.30am - 6pm</td>
+								</tr>
+								<tr>
+									<td class="day">Saturday</td>
+									<td class="time">9.30am - 5pm</td>
+								</tr>
+								<tr>
+									<td class="day">Sunday</td>
+									<td class="time">11am - 4pm</td>
+								</tr>
+							</tbody>
 						</table>
-		            </div>
-		        </div>
-
-		    </div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
