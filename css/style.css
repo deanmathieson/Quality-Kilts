@@ -26,17 +26,10 @@ body {
 	background-color: #5FA8D3;
 	color:black;
 }
-<<<<<<< Updated upstream
 .uk-table th {
 	color: #5FA8D3;
 }
 h2, h1, h3 {
-=======
-
-
-
-h2, h1 {
->>>>>>> Stashed changes
 	color: #5FA8D3!important;
 }
 .uk-subnav > .menubut {
