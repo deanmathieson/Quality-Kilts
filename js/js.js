@@ -417,7 +417,7 @@ $( document ).ready(function() {
 	tartanHTML += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
 	tartanHTML += '</div>'
 	tartanHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
-	tartanHTML += '</div></div></div>'
+	tartanHTML += '</div><p>Can\'t find your tartan? Click <a target="_blank" href="http://www.tartansauthority.com/tartan-ferret/">here</a></p></div></div>'
 
 	var beltHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Belts</h1><div uk-slider="finite: true">'
 	beltHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
