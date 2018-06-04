@@ -123,6 +123,10 @@ h2, h1, h3 {
 	background-color: transparent;
 	border: 1px solid #D3EDFF;
 }
+.uk-button-default {
+	background-color: #5FA8D3!important;
+	color:white;
+}
 .uk-card-default {
 	color:#D3EDFF;
 }
