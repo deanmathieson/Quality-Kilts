@@ -3,6 +3,44 @@ $( document ).ready(function() {
 	aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
 	aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
 	
+	var infoHTML = '<div class="uk-section uk-section-large" style="height:100%"><div class="uk-container" style="height:100%">'
+	infoHTML += '<h1>Davison Menswear & Kilt Hire</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="height:100%; max-height: 450px;"><div style="height:100%">';
+	infoHTML += '<div><h3>Opening Times</h3>'
+	infoHTML+='<table class="uk-table">'
+	infoHTML+='<tbody>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Monday</td>'
+	infoHTML+='<td class="time">9.30am - 6pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Tuesday</td>'
+	infoHTML+='<td class="time">9.30am - 6pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Wednesday</td>'
+	infoHTML+='<td class="time">9.30am - 6pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Thursday</td>'
+	infoHTML+='<td class="time">9.30am - 8pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Friday</td>'
+	infoHTML+='<td class="time">9.30am - 6pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Saturday</td>'
+	infoHTML+='<td class="time">9.30am - 5pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='<tr>'
+	infoHTML+='<td class="day">Sunday</td>'
+	infoHTML+='<td class="time">11am - 4pm</td>'
+	infoHTML+='</tr>'
+	infoHTML+='</tbody>'
+	infoHTML+='</table>'
+	infoHTML+='</div>'
+	infoHTML += '</div><div style="height:100%"><iframe style="height:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8938.275654656887!2d-3.204802!3d55.9395108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d0675edf90601c9!2sDavison+Menswear!5e0!3m2!1sen!2suk!4v1527535608538"  frameborder="0" allowfullscreen></iframe></div></div></div></div>';
+
 	var servicesHTML = '<div style="padding: 10px; height:100%" class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">'
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
@@ -509,7 +547,7 @@ $( document ).ready(function() {
 	buckleHTML += '<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>'
 	buckleHTML += '</div></div></div>'
 
-	var skeanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Skean Dhus</h1><div uk-slider="finite: true">'
+	var skeanHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Skean Dhus</h1><div uk-slider="finite: true; offset-bottom: 30">'
 	skeanHTML += '<div class="uk-position-relative uk-visible-toggle uk-light">'
 	skeanHTML += '<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	skeanHTML += '<li class="uk-transition-toggle">'
@@ -657,52 +695,66 @@ $( document ).ready(function() {
 	$( ".menubut" ).click(function( event ) {
 		if(!$(this).children().text().startsWith("Products")){
 			$(".menubut").removeClass("uk-active");
-			$(".menubut").children().removeClass("uk-active")
+			$(".menubut").children().removeClass("uk-active");
+			$(this).addClass("uk-active");
+
+
+			if($(this).children().text() == "Services") {
+				$("#mbod").html(servicesHTML);
+			}
+			else if($(this).children().text() == "Info") {
+				$("#mbod").html(infoHTML);
+			}
+			else if($(this).children().text() == "About Us") {
+				$("#mbod").html(aboutUsHTML);
+			}
+			if($(this).children().text().startsWith("Dress")) {
+				$("#mbod").html(classySporran);
+				$(this).addClass("uk-active");
+				$("#productsNav").addClass("uk-active");
+			}			
+			if($(this).children().text().startsWith("Semi")) {
+				$("#mbod").html(semiSporran);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Day")) {
+				$("#mbod").html(daySporran);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Boys")) {
+				$("#mbod").html(boySporran);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Tartan")) {
+				$("#mbod").html(tartanHTML);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Belt")) {
+				$("#mbod").html(beltHTML);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Buckle")) {
+				$("#mbod").html(buckleHTML);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Skean")) {
+				$("#mbod").html(skeanHTML);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			if($(this).children().text().startsWith("Kilt Pin")) {
+				$("#mbod").html(pinHTML);
+				$(this).children().addClass("uk-active")
+				$("#productsNav").addClass("uk-active");
+			}
+			console.log("childen text "+ $(this).children().text());
 		}
-		$(this).addClass("uk-active");
-		if($(this).children().text() == "Services") {
-			$("#mbod").html(servicesHTML);
-		}
-		if($(this).children().text() == "About Us") {
-			$("#mbod").html(aboutUsHTML);
-		}
-		if($(this).children().text().startsWith("Dress")) {
-			$("#mbod").html(classySporran);
-			$(this).addClass("uk-active")
-		}			
-		if($(this).children().text().startsWith("Semi")) {
-			$("#mbod").html(semiSporran);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Day")) {
-			$("#mbod").html(daySporran);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Boys")) {
-			$("#mbod").html(boySporran);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Tartan")) {
-			$("#mbod").html(tartanHTML);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Belt")) {
-			$("#mbod").html(beltHTML);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Buckle")) {
-			$("#mbod").html(buckleHTML);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Skean")) {
-			$("#mbod").html(skeanHTML);
-			$(this).children().addClass("uk-active")
-		}
-		if($(this).children().text().startsWith("Kilt Pin")) {
-			$("#mbod").html(pinHTML);
-			$(this).children().addClass("uk-active")
-		}
-		console.log("childen text "+ $(this).children().text());
 	});
 
 	$("#productsNav").hover(
