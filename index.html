@@ -15,61 +15,49 @@
 	<link rel='icon' type='image/png' href='images/favicon.png' />
 </head>
 <body>
-	<div class="uk-background-cover" id="mainBody" >
-		<div style="height:100%;">
-			<div style="width:100%; background-color: rgba(0,0,0,0.7); height: 154px; border-bottom:2px solid #D3EDFF;">
-				<div class="uk-container" >
-					<ul class="uk-subnav uk-subnav-pill">
-						<li class="uk-navbar-left uk-disabled uk-navbar-dropdown-width-2 uk-visible@s"><a href="#"><img src="images/logo.png"" uk-img"></a></li>
-						<li class="menubut uk-active uk-visible@s"><a href="#">About Us</a></li>
-						<li class="menubut uk-visible@s"><a href="#">Services</a></li>
-						<li class="menubut uk-visible@s"><a id="productsNav">Products</a>
-							<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-								<div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-									<div>
-										<ul class="uk-nav uk-navbar-dropdown-nav">
-											<li class="uk-nav-header">Sporrans</li>
-											<li class="menubut"><a href="#">Dress</a></li>
-											<li class="menubut"><a href="#">Semi Dress</a></li>
-											<li class="menubut"><a href="#">Day</a></li>
-											<li class="menubut"><a href="#">Boys</a></li>
-											<li class="uk-nav-divider"></li>
-											<li class="menubut"><a href="#">Tartans</a></li>
-										</ul>
-									</div>
-									<div>
-										<ul class="uk-nav uk-navbar-dropdown-nav">
-											<li class="uk-nav-header">Accessories</li>
-											<li class="menubut"><a href="#">Belts</a></li>
-											<li class="menubut"><a href="#">Buckles</a></li>
-											<li class="menubut"><a href="#">Skean Dhus</a></li>
-											<li class="menubut"><a href="#">Kilt Pins</a></li>
-										</ul>
-									</div>
-								</div>
+	<div style="width:100%; background-color: rgba(0,0,0,0.7); border-bottom:2px solid #D3EDFF;">
+		<div class="uk-container" >
+			<ul class="uk-subnav uk-subnav-pill">
+				<li class="uk-navbar-left uk-disabled uk-visible@s"><a href="#"><img src="images/logo.png"" uk-img"></a></li>
+				<li class="menubut uk-active"><a href="#">About Us</a></li>
+				<li class="menubut"><a href="#">Services</a></li>
+				<li class="menubut"><a id="productsNav">Products</a>
+					<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+						<div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+							<div>
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-nav-header">Sporrans</li>
+									<li class="menubut"><a href="#">Dress</a></li>
+									<li class="menubut"><a href="#">Semi Dress</a></li>
+									<li class="menubut"><a href="#">Day</a></li>
+									<li class="menubut"><a href="#">Boys</a></li>
+									<li class="uk-nav-divider"></li>
+									<li class="menubut"><a href="#">Tartans</a></li>
+								</ul>
 							</div>
-						</li>
-						<li class="menubut uk-visible@s"><a href="#">Info</a></li>
-						<li>    
-							<div class="uk-hidden@s">
-								<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+							<div>
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-nav-header">Accessories</li>
+									<li class="menubut"><a href="#">Belts</a></li>
+									<li class="menubut"><a href="#">Buckles</a></li>
+									<li class="menubut"><a href="#">Skean Dhus</a></li>
+									<li class="menubut"><a href="#">Kilt Pins</a></li>
+								</ul>
 							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div id="mbod"></div>
+						</div>
+					</div>
+				</li>
+				<li class="menubut"><a href="#">Info</a></li>
+			</ul>
 		</div>
 	</div>
-	<div id="offCanvas" class="uk-offcanvas">
-		<p>HOBBLE HOBGFJ </p>
-	</div>
+	<div id="mbod" uk-height-viewport="offset-bottom: 35"></div>
 </body>
 <footer>
 	<div id="footr">
 		<div class="uk-section">
-			<div class="uk-container" style="padding-left:25px; padding-right:25px">
-				<div class="uk-grid-match uk-child-width-1-4@s" uk-grid>
+			<div class="uk-container">
+				<div class="uk-grid-match uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
 					<div>
 						<a href="https://www.lochcarron.co.uk/">
 							<img src="images/Affiliates/lochcarron.jpg" class="uk-align-center" style="margin-bottom:0px;">
@@ -77,23 +65,23 @@
 					</div>
 					<div>
 						<a href="http://www.houseofedgar.com/acatalog/index.html">
-							<img src="images/Affiliates/houseedgar2.jpg" class="uk-align-center" style="margin-bottom:0px;">
+							<img src="images/Affiliates/houseedgarSmall.jpg" class="uk-align-center" style="margin-bottom:0px;">
 						</a>
 					</div>
 					<div>
 						<a href="http://www.tartansauthority.com/">
-							<img src="images/Affiliates/tartan-authority.jpg" class="uk-align-center" style="margin-bottom:0px;">
+							<img src="images/Affiliates/tartan-authoritySmall.jpg" class="uk-align-center" style="margin-bottom:0px;">
 						</a>
 					</div>
 					<div>
-						<a href="http://www.strathmorewoollen.co.uk/home.php">
-							<img src="images/Affiliates/strathmore.jpg" class="uk-align-center" style="margin-bottom:0px;">
-						</a>
+						<p>Phone No: <a style="float:right;" href="tel:0131 229 0266">0131 229 0266</a>
+							<br/>Mobile No: <a style="float:right;" href="tel:07766 552 930">07766 552 930</a></p>
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </footer>
 </html>

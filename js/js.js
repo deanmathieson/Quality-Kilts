@@ -112,7 +112,7 @@ $( document ).ready(function() {
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Kilts</h3>'
 	servicesHTML+= '<img class="serviceImg" src="images/kilt1.jpg"/>'
-	servicesHTML+= "<ul style='padding: 0px;'><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li></ul>"
+	servicesHTML+= "<ul style='padding: 0px;'><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li><li>Kilt Accessories</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "<div style='height:100%'>"
