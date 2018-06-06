@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
 	aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
 	
-	var infoHTML = '<div class="uk-section uk-section-large" style="height:100%"><div class="uk-container" style="height:100%">'
+	var infoHTML = '<div class="uk-section uk-section-large" style="height:100%"><div class="uk-container" style="height:450px">'
 	infoHTML += '<h1>Davison Menswear & Kilt Hire</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="height:100%; max-height: 450px;"><div style="height:100%">';
 	infoHTML += '<div><h3>Opening Times</h3>'
 	infoHTML+='<table class="uk-table">'
