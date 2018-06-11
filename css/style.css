@@ -102,9 +102,11 @@ h2, h1, h3 {
 	font-size:12px;
 
 }
+.uk-first-column {
+	padding-bottom:20px;
+}
 .time {
 	text-align: right!important;
-	padding-right: 135px!important;
 }
 .uk-active > a {
 	background-color: #5FA8D3!important;
