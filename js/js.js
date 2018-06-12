@@ -3,8 +3,9 @@ $( document ).ready(function() {
 	aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
 	aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
 	
-	var infoHTML = '<div class="uk-section uk-section-large" style="height:100%"><div class="uk-container">'
-	infoHTML += '<h1>Davison Menswear & Kilt Hire</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="height:100%;">';
+	var infoHTML = '<div class="uk-section uk-section-large"><div class="uk-container">'
+	infoHTML += '<h1>Davison Menswear & Kilt Hire</h1>'
+	infoHTML += '<div class="uk-grid-match uk-child-width-1-2@l uk-child-width-1-1@m" uk-grid style="height:100%;">';
 	infoHTML += '<div><h3>Opening Times</h3>'
 	infoHTML+='<table class="uk-table">'
 	infoHTML+='<tbody>'
@@ -45,80 +46,68 @@ $( document ).ready(function() {
 	infoHTML+='<div class="contact">'
 	infoHTML+='<h1>contact us</h1>'
 	infoHTML+='<p>Feel free to fill in the form below if you have any enquiries. Alternatively you can call us on 0131 229 0266 or out of hours on 07766 552 930.</p>'
-	infoHTML+='<form name="contactform" method="post" action="send_form_email.php">'
-	infoHTML+='<table width="450px" align="center">'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<label for="first_name">First Name</label></td>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<input  type="text" name="first_name" maxlength="50" size="30">'
-	infoHTML+='</td>'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td valign="top"">'
-	infoHTML+='<label for="last_name">Last Name</label>'
-	infoHTML+='</td>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<input  type="text" name="last_name" maxlength="50" size="30">'
-	infoHTML+='</td>'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<label for="email">Email Address</label>'
-	infoHTML+='</td>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<input  type="text" name="email" maxlength="80" size="30">'
-	infoHTML+='</td>'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<label for="telephone">Telephone Number</label>'
-	infoHTML+='</td>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<input  type="text" name="telephone" maxlength="30" size="30">'
-	infoHTML+='</td>'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<label for="comments">Enquiry</label>'
-	infoHTML+='</td>'
-	infoHTML+='<td valign="top">'
-	infoHTML+='<textarea  name="comments" cols="22" rows="6"></textarea>'
-	infoHTML+='</td>'
-	infoHTML+='</tr>'
-	infoHTML+='<tr>'
-	infoHTML+='<td colspan="2" style="text-align:center">'
-	infoHTML+='<input type="submit" value="Submit"></td>'
-	infoHTML+='</tr>'
-	infoHTML+='</table>'
-	infoHTML+='</form>'
+	infoHTML+=`<form name="contactform" method="post" action="send_form_email.php">
+	<div class="uk-margin">
+	<label class="uk-form-label" for="first-name-text">First Name:</label>
+	<div class="uk-form-controls">
+	<input class="uk-input" name="first_name" id="first-name-text" type="text" placeholder="First Name">
+	</div>
+	</div>
+	<div class="uk-margin">
+	<label class="uk-form-label" for="last_name-text">First Name:</label>
+	<div class="uk-form-controls">
+	<input class="uk-input" name="last_name" id="last_name-text" type="text" placeholder="Last Name">
+	</div>
+	</div>
+	<div class="uk-margin">
+	<label class="uk-form-label" for="email-text">Email:</label>
+	<div class="uk-form-controls">
+	<input class="uk-input" name="email" id="email-text" type="text" placeholder="Email">
+	</div>
+	</div>
+	<div class="uk-margin">
+	<label class="uk-form-label" for="phone-text">telephone:</label>
+	<div class="uk-form-controls">
+	<input class="uk-input" name="phone" id="phone-text" type="text" placeholder="Phone Number">
+	</div>
+	</div>
+	<div class="uk-margin">
+	<label class="uk-form-label" for="comments">Comments:</label>
+	<div class="uk-form-controls">
+	<textarea  name="comments"></textarea>
+	</div>
+	</div>
+	<div class="uk-margin">
+	<div class="uk-form-controls">
+	<button class="uk-button uk-button-default" type="submit" value="Submit">Submit</button>
+	</div>
+	</div>
+	</form>`;
 	infoHTML+='</div>'
 	infoHTML+='</div>'
 	infoHTML+='</div>'
 	infoHTML+='</div>'
-	infoHTML+='</div>'
-	infoHTML += '</div><div style="height:100%"><iframe style="height:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8938.275654656887!2d-3.204802!3d55.9395108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d0675edf90601c9!2sDavison+Menswear!5e0!3m2!1sen!2suk!4v1527535608538"  frameborder="0" allowfullscreen></iframe></div></div></div></div>';
+	infoHTML += '</div><div><iframe style="height:450px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8938.275654656887!2d-3.204802!3d55.9395108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d0675edf90601c9!2sDavison+Menswear!5e0!3m2!1sen!2suk!4v1527535608538"  frameborder="0" allowfullscreen></iframe></div></div></div></div>';
 
 	var servicesHTML = '<div style="padding: 10px; height:100%" class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">'
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Suits</h3>'
-	servicesHTML+= '<img class="serviceImg" src="images/suit1.jpg"/>'
+	servicesHTML+= '<img class="serviceImg uk-align-center" src="images/suit1.jpg"/>'
 	servicesHTML+= "<ul style='padding: 0px;'><li>Morning Suits</li><li>Shirts</li><li>Jackets</li><li>Dinner Suits</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Kilts</h3>'
-	servicesHTML+= '<img class="serviceImg" src="images/kilt1.jpg"/>'
+	servicesHTML+= '<img class="serviceImg uk-align-center" src="images/kilt1.jpg"/>'
 	servicesHTML+= "<ul style='padding: 0px;'><li>Kilt Hire</li><li>Sporrans</li><li>Tartans</li><li>Kilt Accessories</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "<div style='height:100%'>"
 	servicesHTML+= '<div class="uk-card uk-card-default uk-card-body">'
 	servicesHTML+= '<h3 class="uk-card-title">Misc</h3>'
-	servicesHTML+= '<img class="serviceImg" src="images/shoes2.jpg"/>'
+	servicesHTML+= '<img class="serviceImg uk-align-center" src="images/shoes2.jpg"/>'
 	servicesHTML+= "<ul style='padding: 0px;'><li>Shoes</li><li>Buckles</li><li>Ex Hire Sales</li><li>Measauring</li></ul>"
 	servicesHTML+= "</div>"
 	servicesHTML+= "</div>"

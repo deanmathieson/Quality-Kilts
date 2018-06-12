@@ -13,7 +13,6 @@ html {
 	height:100%;
 }
 .uk-subnav-pill > * > :first-child {
-	font-size:20px;
 	color: #5FA8D3;
 }
 .uk-subnav > * {
@@ -31,7 +30,11 @@ h2, h1, h3 {
 	color: #5FA8D3!important;
 }
 .uk-subnav > .menubut {
-	margin-top:60px;
+	margin-top:30px;
+}
+#mobfooter {
+	background-color: rgba(0,0,0,0.7);
+	margin-top: 20px;
 }
 #mbod {
 	background-color: rgba(0,0,0,0.7);
@@ -102,8 +105,8 @@ h2, h1, h3 {
 	font-size:12px;
 
 }
-.uk-first-column {
-	padding-bottom:20px;
+.uk-form-label {
+	color:#D3EDFF;
 }
 .time {
 	text-align: right!important;
@@ -130,7 +133,6 @@ h2, h1, h3 {
 }
 .serviceImg {
 	max-height:273px;
-	width: 100%;
 }
 .block {
 	display:block;
@@ -151,4 +153,3 @@ svg:hover {
 	background-color: #5FA8D3!important;
 	color: white;
 }
-
