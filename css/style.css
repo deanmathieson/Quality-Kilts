@@ -33,7 +33,6 @@ h2, h1, h3 {
 	margin-top:30px;
 }
 #mobfooter {
-	background-color: rgba(0,0,0,0.7);
 	margin-top: 20px;
 }
 #mbod {
@@ -152,4 +151,23 @@ svg:hover {
 .menubut > .uk-active {
 	background-color: #5FA8D3!important;
 	color: white;
+}
+@media only screen and (max-width: 900px) {
+	html {
+		background-image: none;
+	}
+}
+@media only screen and (max-width: 1360px) {
+	#mobfooter > div{
+		display:flex!important;
+	}
+	#footr > div {
+		display:none!important;
+	}
+	#mobfootcont {
+		width:100%;
+		background-color: rgba(0,0,0,0.7);
+		border-top: 2px solid #D3EDFF;
+		margin-top:20px;
+	}
 }

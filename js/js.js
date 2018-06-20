@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	var aboutUsHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h1>Davison Menswear & Kilt Hire<br/>Established 1927.</h1><div class="uk-grid-match uk-child-width-1-2@m" uk-grid><div><p>';
+	var aboutUsHTML = '<div class="uk-section uk-section-large"><div class="uk-container"><h2>Davison Menswear & Kilt Hire<br/>Established 1927.</h2><div class="uk-grid-match uk-child-width-1-2@m" uk-grid><div><p>';
 	aboutUsHTML += 'Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting. <br/><br/>We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.'
 	aboutUsHTML += '</p></div><div><img data-src="images/bagpipes.jpg" style="height: 100%;" alt="" uk-img></div></div></div></div>';
 	
@@ -74,7 +74,7 @@ $( document ).ready(function() {
 	<div class="uk-margin">
 	<label class="uk-form-label" for="comments">Comments:</label>
 	<div class="uk-form-controls">
-	<textarea  name="comments"></textarea>
+	<textarea name="comments" class="uk-textarea" rows="5" placeholder="Comments"></textarea>
 	</div>
 	</div>
 	<div class="uk-margin">
