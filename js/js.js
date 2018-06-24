@@ -393,7 +393,7 @@ $( document ).ready(function() {
 
 	var boySporran = '<div class="uk-section uk-section-large"><div class="uk-container"><h1 id="subhead">Boys Sporrans</h1><div uk-slider="finite: true">'
 	boySporran += '<div class="uk-position-relative uk-visible-toggle uk-light">'
-	boySporran += '<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid">'
+	boySporran += '<ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">'
 	boySporran += '<li class="uk-transition-toggle">'
 	boySporran += '<img src="images/boy/boy1.jpg" alt="">'
 	boySporran += '<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-fade"><h3>8GS</h3></div>'
