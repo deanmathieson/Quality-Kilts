@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Davison Menswear</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/uikit.css" />
+	<script src="js/uikit.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<link rel='icon' type='image/png' href='images/favicon.png' />
+
+</head>
+<body>
+	<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-height-viewport="offset-bottom: 20" uk-parallax="bgy: -100" style="background-image: url(images/background.jpg);">
+	</div>
+	<h1 class="uk-text-center">Welcome to Davison Menswear</h1>
+
+
+	<div class="uk-container">
+		<hr>
+		<div class="uk-grid uk-child-width-1-2" >
+			<div class="uk-margin-large">
+				<h2>About Us</h2>
+				<p>Welcome to Davison kilt hire, suppliers of the highest quality Highland & formal dress. Established in 1927 we are experienced in supplying all your needs in Scottish outfitting.We believe in only supplying the best of the best and will not settle for cheap imitations so neither should our customers. When it comes to looking for a quality product with service to match, look no further.
+				</p>
+			</div>
+			<img src="images/bagpipes.jpg">
+		</div>
+		<h2 class="uk-text-center"> Services</h2>
+		<div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/dress/dress1.jpg"></div>
+				<h4 class="uk-text-center">Formal</h4>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/bagpipes.jpg"></div>
+				<h4 class="uk-text-center">Casual</h4>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/dress/dress1.jpg"></div>
+				<h4 class="uk-text-center">Repairs & Alterations</h4>
+			</div>
+		</div>
+		<hr>
+		<h2 class="uk-text-center">Gallery</h2>
+		<div uk-slider>
+			<ul id="gallery" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+				<script>
+					var text = "";
+					for (var i = 0; i < 45; i++) {
+						text += `<li class="uk-transition-toggle">
+						<img src="images/gallery/`+i+`.jpg" alt="">
+						<div class="uk-position-center uk-panel"></div>
+						</li>`;
+					};
+					console.log(text)
+					$("#gallery").html(text);
+				</script>	
+			</ul>
+
+			<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+		</div>
+		<hr>
+		<h2 class="uk-text-center">Reviews</h2>
+		<div>google reviews TO DO</div>
+
+	</div>
+	<button class="uk-button uk-button-default uk-width-1-1 uk-margin-large-bottom">Contact Us</button>
+
+	<div class="uk-section uk-dark">
+		<hr>
+		<div class="uk-container">
+			<div uk-grid>
+				<div class="uk-width-1-3">
+					<h4>Address</h4>
+					<ul class="uk-list">
+						<li>Davison menswear</li>
+					</ul>
+					<hr><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.9745466727973!2d-1.3880729841731323!3d53.03879477991577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487992b4c4403ead%3A0x1c24cd7d6e34c331!2sTudor+Beams!5e0!3m2!1sen!2suk!4v1529509367241" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="uk-width-1-3">
+					<h4>Email</h4>
+					<a href="mailto:roryswiine@hotmail.co.uk">Rory.black</a>
+					<hr>
+					<h4>Phone Number</h4>
+					<a href="tel:123456789">123456789</a> 
+					<hr>
+					<h4>Facebook</h4>
+					<div class="fb-like" data-href="https://www.facebook.com/Ripley-Reclaim-and-Tudor-Beams-562545820481541/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				</div>
+				<div class="uk-width-1-3">
+					<h4>Opening Times</h4>
+					<p>Monday to Saturday <span style="float:right">9am - 5pm</span></p>
+					<p>Sunday <span style="float:right">10am - 5pm</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>		
+</html>
