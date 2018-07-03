@@ -9,7 +9,18 @@
 	<script src="js/uikit-icons.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<link rel='icon' type='image/png' href='images/favicon.png' />
+	<style>
 
+	@font-face {
+		font-family: trajanus;
+		src: url('fonts/trajanus.ttf');
+
+	}
+	html {
+		font-family: trajanus;
+	}
+
+</style>
 </head>
 <body>
 	<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-height-viewport="offset-bottom: 20" uk-parallax="bgy: -100" style="background-image: url(images/background.jpg);">
@@ -30,37 +41,94 @@
 		<h2 class="uk-text-center"> Services</h2>
 		<div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
 			<div>
-				<div class="uk-card uk-card-default uk-card-body"><img src="images/dress/dress1.jpg"></div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/gallery/41.jpg"></div>
 				<h4 class="uk-text-center">Formal</h4>
 			</div>
 			<div>
-				<div class="uk-card uk-card-default uk-card-body"><img src="images/bagpipes.jpg"></div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/gallery/19.jpg"></div>
 				<h4 class="uk-text-center">Casual</h4>
 			</div>
 			<div>
-				<div class="uk-card uk-card-default uk-card-body"><img src="images/dress/dress1.jpg"></div>
+				<div class="uk-card uk-card-default uk-card-body"><img src="images/gallery/46.jpg"></div>
 				<h4 class="uk-text-center">Repairs & Alterations</h4>
 			</div>
 		</div>
 		<hr>
+
+
+
 		<h2 class="uk-text-center">Gallery</h2>
-		<div uk-slider>
-			<ul id="gallery" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-				<script>
-					var text = "";
-					for (var i = 0; i < 45; i++) {
-						text += `<li class="uk-transition-toggle">
-						<img src="images/gallery/`+i+`.jpg" alt="">
-						<div class="uk-position-center uk-panel"></div>
-						</li>`;
-					};
-					console.log(text)
-					$("#gallery").html(text);
-				</script>	
-			</ul>
+		<div>
+			<div class="uk-child-width-1-5@s uk-text-center uk-grid-match" uk-grid>
+				<div>
+					<div class=""><img src="images/gallery/1.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/18.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/3.jpg"></div>
+				</div>
 
-			<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+			</div>
 
+			<div class="uk-child-width-1-5@s uk-text-center uk-grid-match" uk-grid>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/20.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/5.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+			</div>
+			<div class="uk-child-width-1-5@s uk-text-center uk-grid-match" uk-grid>
+				<div>
+					<div class=""><img src="images/gallery/6.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/31.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/8.jpg"></div>
+				</div>
+			</div>
+			<div class="uk-child-width-1-5@s uk-text-center uk-grid-match" uk-grid>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/9.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+				<div>
+					<div class=""><img src="images/gallery/10.jpg"></div>
+				</div>
+				<div>
+					<div class=""></div>
+				</div>
+			</div>
 		</div>
 		<hr>
 		<h2 class="uk-text-center">Reviews</h2>
